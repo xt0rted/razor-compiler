@@ -47,12 +47,12 @@ public class __Generated__TagCloudViewComponentTagHelper : Microsoft.AspNetCore.
         _helper = helper;
     }
     [Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute, global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewContextAttribute]
-    public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext ViewContext { get; set; }
-    public System.Int32 Foo { get; set; }
+    public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext @ViewContext { get; set; }
+    public System.Int32 @Foo { get; set; }
     public override async global::System.Threading.Tasks.Task ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext context, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput output)
     {
         (_helper as global::Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware)?.Contextualize(ViewContext);
-        var content = await _helper.InvokeAsync(""TagCloud"", new { Foo });
+        var content = await _helper.InvokeAsync(""TagCloud"", new { @Foo });
         output.TagName = null;
         output.Content.SetHtmlContent(content);
     }
@@ -101,13 +101,13 @@ public class __Generated__TagCloudViewComponentTagHelper : Microsoft.AspNetCore.
         _helper = helper;
     }
     [Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute, global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewContextAttribute]
-    public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext ViewContext { get; set; }
-    public System.Collections.Generic.Dictionary<System.String, System.Int32> Tags { get; set; }
+    public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext @ViewContext { get; set; }
+    public System.Collections.Generic.Dictionary<System.String, System.Int32> @Tags { get; set; }
      = new System.Collections.Generic.Dictionary<System.String, System.Int32>();
     public override async global::System.Threading.Tasks.Task ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext context, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput output)
     {
         (_helper as global::Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware)?.Contextualize(ViewContext);
-        var content = await _helper.InvokeAsync(""TagCloud"", new { Tags });
+        var content = await _helper.InvokeAsync(""TagCloud"", new { @Tags });
         output.TagName = null;
         output.Content.SetHtmlContent(content);
     }

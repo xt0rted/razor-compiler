@@ -343,7 +343,7 @@ public class CSharpCodeWriterTest
 
         // Assert
         var output = writer.GenerateCode();
-        Assert.Equal("public global::System.String MyString { get; set; }" + Environment.NewLine, output);
+        Assert.Equal("public global::System.String @MyString { get; set; }" + Environment.NewLine, output);
     }
 
     [Fact]
@@ -357,7 +357,7 @@ public class CSharpCodeWriterTest
 
         // Assert
         var output = writer.GenerateCode();
-        Assert.Equal("public static global::System.String MyString { get; set; }" + Environment.NewLine, output);
+        Assert.Equal("public static global::System.String @MyString { get; set; }" + Environment.NewLine, output);
     }
 
     [Fact]

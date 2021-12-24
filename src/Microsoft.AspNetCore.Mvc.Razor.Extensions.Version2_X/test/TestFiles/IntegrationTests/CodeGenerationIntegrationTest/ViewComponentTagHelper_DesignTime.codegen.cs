@@ -75,12 +75,12 @@ global::System.Object __typeHelper = "*, AppCode";
                 _helper = helper;
             }
             [Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute, global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewContextAttribute]
-            public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext ViewContext { get; set; }
-            public System.String firstName { get; set; }
+            public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext @ViewContext { get; set; }
+            public System.String @firstName { get; set; }
             public override async global::System.Threading.Tasks.Task ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext context, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput output)
             {
                 (_helper as global::Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware)?.Contextualize(ViewContext);
-                var content = await _helper.InvokeAsync("Test", new { firstName });
+                var content = await _helper.InvokeAsync("Test", new { @firstName });
                 output.TagName = null;
                 output.Content.SetHtmlContent(content);
             }

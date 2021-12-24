@@ -348,7 +348,7 @@ internal static class CodeWriterExtensions
         }
 
         writer.Write(typeName);
-        writer.Write(" ");
+        writer.Write(" @");
         writer.Write(propertyName);
         writer.Write(" { get; set; }");
         writer.WriteLine();

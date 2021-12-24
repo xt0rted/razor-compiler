@@ -187,7 +187,7 @@ internal class ViewComponentTagHelperTargetExtension : IViewComponentTagHelperTa
                 writer.WriteLine($"if (__context.AllAttributes.ContainsName(\"{attributeName}\"))");
                 writer.WriteLine("{");
                 writer.CurrentIndent += writer.TabSize;
-                writer.WriteLine($"args[nameof({parameterName})] = {parameterName};");
+                writer.WriteLine($"args[nameof(@{parameterName})] = @{parameterName};");
                 writer.CurrentIndent -= writer.TabSize;
                 writer.WriteLine("}");
             }

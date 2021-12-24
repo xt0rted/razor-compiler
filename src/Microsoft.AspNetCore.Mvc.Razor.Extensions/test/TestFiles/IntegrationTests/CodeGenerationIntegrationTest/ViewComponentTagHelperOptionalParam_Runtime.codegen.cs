@@ -295,8 +295,8 @@ __OptionalWithMultipleTypesViewComponentTagHelper.birthDate = DateTime.Now;
                 __helper = helper;
             }
             [Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute, global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewContextAttribute]
-            public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext ViewContext { get; set; }
-            public System.Boolean showSecret { get; set; }
+            public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext @ViewContext { get; set; }
+            public System.Boolean @showSecret { get; set; }
             public override async global::System.Threading.Tasks.Task ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext __context, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput __output)
             {
                 (__helper as global::Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware)?.Contextualize(ViewContext);
@@ -309,7 +309,7 @@ __OptionalWithMultipleTypesViewComponentTagHelper.birthDate = DateTime.Now;
                 Dictionary<string, object> args = new Dictionary<string, object>();
                 if (__context.AllAttributes.ContainsName("show-secret"))
                 {
-                    args[nameof(showSecret)] = showSecret;
+                    args[nameof(@showSecret)] = @showSecret;
                 }
                 return args;
             }
@@ -323,9 +323,9 @@ __OptionalWithMultipleTypesViewComponentTagHelper.birthDate = DateTime.Now;
                 __helper = helper;
             }
             [Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute, global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewContextAttribute]
-            public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext ViewContext { get; set; }
-            public System.String secret { get; set; }
-            public System.Boolean showSecret { get; set; }
+            public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext @ViewContext { get; set; }
+            public System.String @secret { get; set; }
+            public System.Boolean @showSecret { get; set; }
             public override async global::System.Threading.Tasks.Task ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext __context, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput __output)
             {
                 (__helper as global::Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware)?.Contextualize(ViewContext);
@@ -338,11 +338,11 @@ __OptionalWithMultipleTypesViewComponentTagHelper.birthDate = DateTime.Now;
                 Dictionary<string, object> args = new Dictionary<string, object>();
                 if (__context.AllAttributes.ContainsName("secret"))
                 {
-                    args[nameof(secret)] = secret;
+                    args[nameof(@secret)] = @secret;
                 }
                 if (__context.AllAttributes.ContainsName("show-secret"))
                 {
-                    args[nameof(showSecret)] = showSecret;
+                    args[nameof(@showSecret)] = @showSecret;
                 }
                 return args;
             }
@@ -356,12 +356,12 @@ __OptionalWithMultipleTypesViewComponentTagHelper.birthDate = DateTime.Now;
                 __helper = helper;
             }
             [Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute, global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewContextAttribute]
-            public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext ViewContext { get; set; }
-            public System.Int32 age { get; set; }
-            public System.Double favoriteDecimal { get; set; }
-            public System.Char favoriteLetter { get; set; }
-            public System.DateTime? birthDate { get; set; }
-            public System.String anotherOne { get; set; }
+            public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext @ViewContext { get; set; }
+            public System.Int32 @age { get; set; }
+            public System.Double @favoriteDecimal { get; set; }
+            public System.Char @favoriteLetter { get; set; }
+            public System.DateTime? @birthDate { get; set; }
+            public System.String @anotherOne { get; set; }
             public override async global::System.Threading.Tasks.Task ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext __context, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput __output)
             {
                 (__helper as global::Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware)?.Contextualize(ViewContext);
@@ -374,23 +374,23 @@ __OptionalWithMultipleTypesViewComponentTagHelper.birthDate = DateTime.Now;
                 Dictionary<string, object> args = new Dictionary<string, object>();
                 if (__context.AllAttributes.ContainsName("age"))
                 {
-                    args[nameof(age)] = age;
+                    args[nameof(@age)] = @age;
                 }
                 if (__context.AllAttributes.ContainsName("favorite-decimal"))
                 {
-                    args[nameof(favoriteDecimal)] = favoriteDecimal;
+                    args[nameof(@favoriteDecimal)] = @favoriteDecimal;
                 }
                 if (__context.AllAttributes.ContainsName("favorite-letter"))
                 {
-                    args[nameof(favoriteLetter)] = favoriteLetter;
+                    args[nameof(@favoriteLetter)] = @favoriteLetter;
                 }
                 if (__context.AllAttributes.ContainsName("birth-date"))
                 {
-                    args[nameof(birthDate)] = birthDate;
+                    args[nameof(@birthDate)] = @birthDate;
                 }
                 if (__context.AllAttributes.ContainsName("another-one"))
                 {
-                    args[nameof(anotherOne)] = anotherOne;
+                    args[nameof(@anotherOne)] = @anotherOne;
                 }
                 return args;
             }

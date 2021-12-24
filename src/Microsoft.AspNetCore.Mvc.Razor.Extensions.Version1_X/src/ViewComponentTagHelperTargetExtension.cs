@@ -161,7 +161,7 @@ internal class ViewComponentTagHelperTargetExtension : IViewComponentTagHelperTa
     private string[] GetMethodParameters(TagHelperDescriptor tagHelper)
     {
         var propertyNames = tagHelper.BoundAttributes.Select(attribute => attribute.GetPropertyName());
-        var joinedPropertyNames = string.Join(", ", propertyNames);
+        var joinedPropertyNames = string.Join(", ", propertyNames.Select( p=> "@" + p));
         var parametersString = $"new {{ { joinedPropertyNames } }}";
         var viewComponentName = tagHelper.GetViewComponentName();
         var methodParameters = new[] { $"\"{viewComponentName}\"", parametersString };

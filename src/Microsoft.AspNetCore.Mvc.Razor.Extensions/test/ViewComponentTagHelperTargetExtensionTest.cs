@@ -47,8 +47,8 @@ public class __Generated__TagCloudViewComponentTagHelper : Microsoft.AspNetCore.
         __helper = helper;
     }
     [Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute, global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewContextAttribute]
-    public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext ViewContext { get; set; }
-    public System.Int32 Foo { get; set; }
+    public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext @ViewContext { get; set; }
+    public System.Int32 @Foo { get; set; }
     public override async global::System.Threading.Tasks.Task ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext __context, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput __output)
     {
         (__helper as global::Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware)?.Contextualize(ViewContext);
@@ -61,7 +61,7 @@ public class __Generated__TagCloudViewComponentTagHelper : Microsoft.AspNetCore.
         Dictionary<string, object> args = new Dictionary<string, object>();
         if (__context.AllAttributes.ContainsName(""Foo""))
         {
-            args[nameof(Foo)] = Foo;
+            args[nameof(@Foo)] = @Foo;
         }
         return args;
     }
@@ -110,8 +110,8 @@ public class __Generated__TagCloudViewComponentTagHelper : Microsoft.AspNetCore.
         __helper = helper;
     }
     [Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute, global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewContextAttribute]
-    public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext ViewContext { get; set; }
-    public System.Collections.Generic.Dictionary<System.String, System.Int32> Tags { get; set; }
+    public global::Microsoft.AspNetCore.Mvc.Rendering.ViewContext @ViewContext { get; set; }
+    public System.Collections.Generic.Dictionary<System.String, System.Int32> @Tags { get; set; }
      = new System.Collections.Generic.Dictionary<System.String, System.Int32>();
     public override async global::System.Threading.Tasks.Task ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext __context, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput __output)
     {
@@ -125,7 +125,7 @@ public class __Generated__TagCloudViewComponentTagHelper : Microsoft.AspNetCore.
         Dictionary<string, object> args = new Dictionary<string, object>();
         if (__context.AllAttributes.ContainsName(""Foo""))
         {
-            args[nameof(Tags)] = Tags;
+            args[nameof(@Tags)] = @Tags;
         }
         return args;
     }
